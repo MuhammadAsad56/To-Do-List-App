@@ -1,6 +1,11 @@
 body {
-    background: linear-gradient(90deg, #2335be, #30c0cbe9);
+    margin: 0;
     display: flex;
+    /* align-items: center; */
+    /* min-width: 100vh; */
+    min-width: 330px;
+    background: linear-gradient(90deg, #2335be, #30c0cbe9);
+
 }
 #mess {
     display: flex;
@@ -39,7 +44,17 @@ button {
 
 input {
     list-style-type: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+}
+@media only screen and (max-width: 330px){
+    input {
+        list-style-type: none;
+        font-size: 1rem;
+}
+button {
+    padding: 4px;
+    margin-left: 5px;
+}
 }
 
 #para {
